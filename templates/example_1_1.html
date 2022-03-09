@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+    <style>
+    .container {
+    margin-right:40%;
+    text-align: center;
+    color: #333;
+    font-family: verdana;
+}
+
+.button8 {
+  background-color:orange;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+.button8:hover { background: rgba(255,255,255,.2); }
+.button8:active { background: white; }
+
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+body {
+       background: url(../static/images/1000.jpg) no-repeat;
+  background-size: 100%;
+
+  margin: 0;
+  height: 3000px;
+}
+.custom-colored-h1
+{
+    color: white;
+}
+
+.table-h1
+{
+    color: white;
+    font-family: verdana;
+    font-size: 19px;
+    font-weight:100;
+}
+.button {
+    border: 1px ridge whitesmoke;
+    background-color: white;
+    padding: 28px 36px;
+    font-family: verdana;
+    font-size: 16px;
+    transition-duration: 0.8s;
+    color: black
+ }
+.button:hover {
+    background-color: whitesmoke;
+    border: 1px ridge #FFFFFF;
+    color: black;
+    padding: 10px 26px;
+    font-family: verdana;
+    font-size: 25px;
+    font-weight:100;
+}
+
+    #content {
+    margin-top: 0px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 17px;
+    }
+    .col1 {
+    width:700px;
+    height:500px;
+    float:left;
+    box-shadow: inset -1px 0 0 black;
+    }
+    .col2 {
+    width:100%;
+    height:auto;
+    float:left;
+    }
+   body {
+    background: url(../static/images/1000.jpg)  repeat-y 100% 0;
+    background-size: 100%;
+
+    margin: 0;
+   }
+   h1 {
+    font-weight: bold;
+   }
+   h2 {
+    font-weight: normal;
+   }
+
+   .example-parent {
+
+  border: 2px solid #DFA612;
+  color: black;
+  display: flex;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.example-origin {
+    cursor: pointer;
+
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+
+}
+
+.example-draggable {
+    cursor: pointer;
+
+  background-color: orange;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone-beauty {
+  background-color: #ddd;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+.dropzone-right {
+  background-color: green;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+.dropzone-wrong {
+  background-color: red;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone-yellow {
+  background-color: yellow;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone-yellow-right {
+  background-color: yellow;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone-yellow-wrong {
+  background-color: yellow;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+.example-dropzone {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+.button8 {
+  display: inline-block;
+  background-color:orange;
+  color: white;
+  font-weight: 700;
+  float: right;
+    font-family: verdana;
+    font-size: 21px;
+    font-weight:600;
+  text-decoration: none;
+  user-select: none;
+  width: 250px;
+  height: 70px;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+.button8:hover { background: rgba(255,255,255,.2); }
+.button8:active { background: white; }
+    </style>
+</head>
+<body class="body_hide"  font-family:'verdana', sans-serif;/>
+<script>
+function onDragStart(event) {
+  event
+    .dataTransfer
+    .setData('text/plain', event.target.id);
+
+  event
+    .currentTarget
+    .style
+    .backgroundColor = 'yellow';
+}
+function onDragOver(event) {
+  event.preventDefault();
+}
+function onDrop(event) {
+  const id = event.dataTransfer.getData('text');
+    const draggableElement = document.getElementById(id);
+    const dropzone = event.target;
+    if (dropzone.className == "dropzone-yellow-wrong" || dropzone.className == "dropzone-yellow-right" ) {
+    } else {
+            if (dropzone.id[0] == draggableElement.id[0]) {
+                event.dataTransfer.clearData();
+                document.getElementById(event.target.id).className = "dropzone-yellow-right";
+                draggableElement.remove();
+            } else {
+                event.dataTransfer.clearData();
+                document.getElementById(event.target.id).className = "dropzone-yellow-wrong";
+                draggableElement.remove();
+            }
+    }
+}
+
+function check() {
+    list = ["F","A","C","G","D","E","J","B","H","I"]
+    for (var item of list) {
+        if (document.getElementById(item).className == "dropzone-yellow-right") {
+            document.getElementById(item).className = "dropzone-right";
+        } else {
+            document.getElementById(item).className = "dropzone-wrong";
+        }
+    }
+}
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+</script>
+<div class="topnav">
+  <a class="active"  href="../../tour1/_1">Zurück zur Startseite</a>
+  <a href="../../tour">Zurück</a>
+  <a href="../../tour1/_2">Weiter</a>
+</div>
+
+<div class="col2" id="content">
+    <h1 class="custom-colored-h1"><b> Runde 1. Aufgabe 1.</b> </h1>
+    <h1 class="custom-colored-h1"><b>Verbinde das deutsche Wort mit dem russischen.</b> </h1>
+    <p></p>
+
+<div class="example-parent">
+  <div class="example-origin">
+    <div
+      id="A1"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Rührt euch!
+    </div>
+    <div
+      id="B2"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Auseinanderziehen!
+    </div>
+    <div
+      id="C3"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+Im Gleichschritt, Marsch!     </div>
+
+    <div
+      id="D4"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Laufschritt!
+    </div>
+    <div
+      id="E5"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+     Halt, wer da!
+    </div>
+    <div
+      id="F6"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+Stillgestanden!
+    </div>
+    <div
+      id="G7"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+In Doppelreihe, angetreten!
+    </div>
+    <div
+      id="H8"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+Augen gerade, aus!
+    </div>
+    <div
+      id="I9"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+Ich bitte sprechen zu dürfen!
+    </div>
+    <div
+      id="J10"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+Hinlegen!
+    </div>
+  </div>
+
+<div
+class="example-dropzone"
+ondragover="onDragOver(event);"
+ondrop="onDrop(event);"
+>
+<div class="dropzone-beauty" id="F">
+Смирно!
+
+</div>
+<div class="dropzone-beauty" id="A">
+Вольно
+</div>
+<div class="dropzone-beauty" id="C">
+Прямо! (с места)
+
+</div>
+
+<div class="dropzone-beauty" id="G">
+В колонну по-два становись!
+
+</div>
+<div class="dropzone-beauty" id="D">
+Бегом!
+</div>
+<div class="dropzone-beauty" id="E">
+Стоять на месте!
+
+</div>
+
+
+<div class="dropzone-beauty" id="J">
+Лечь (ложись)!
+
+</div>
+
+<div class="dropzone-beauty" id="B">
+Разойдись
+</div>
+<div class="dropzone-beauty" id="H">
+Равнение на середину!
+
+</div>
+<div class="dropzone-beauty" id="I">
+Разрешите обратиться!
+
+</div>
+    </div>
+  </div>
+
+<div class="container" >
+    <button class="button8" onclick="check()">Überprüfen!</button>
+  </div>
+
+</div>
+</div>
+
+
+</body>
+</html>

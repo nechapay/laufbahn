@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+    <style>
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+#content {
+  margin-top: 0px;
+  overflow: hidden;
+    font-family: verdana;
+    font-size: 30px;
+}
+.col2 {
+  width:auto;
+  height:auto;
+  float:left;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: auto;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+.custom-colored-h1
+{
+    color: white;
+}
+.my-table
+{
+    color: white;
+    background-color:orange;
+}
+
+
+body {
+       background: url(../static/images/1000.jpg) repeat;
+  background-size: 100%;
+
+  margin: 0;
+  height: auto;
+}
+    </style>
+</head>
+<body class="body_hide"   font-family:'verdana', sans-serif;/>
+<script>
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+</script>
+
+
+<div class="topnav">
+  <a class="active" href="../../book">Wörterbuch</a>
+  <a href="../../cards">Karten</a>
+  <a href="../../tour">Runden</a>
+</div>
+
+
+
+<div class="col2" id="content">
+    <h1 class="custom-colored-h1"><b> UNIFORM</b> </h1>
+
+    <table class="my-table" border="1" width="100%" cellpadding="3" bordercolor='#333'>
+
+<tr>
+<th>Слово</th>
+<th>Перевод</th>
+</tr>
+<tr>
+<td>der Gefreiter</td>
+<td> Ефрейтор</td>
+</tr>
+<tr>
+<td>der Obergefreiter</td>
+<td>
+Обер-ефрейтор</td>
+</tr>
+<tr>
+<td>der Hauptgefreiter</td>
+<td>
+Гаупт-ефрейтор</td>
+</tr>
+<tr>
+<td>der Stabsgefreiter</td>
+<td>
+Штабс-ефрейтор</td>
+</tr>
+<tr>
+<td>der Oberstabsgefreiter</td>
+<td>
+Обер-штабс-ефрейтор</td>
+</tr>
+<tr>
+<td>der Unteroffizier</td>
+<td>
+Унтер-офицер</td>
+</tr>
+<tr>
+<td>der Stabsunteroffizier</td>
+<td>
+Штабс-унтер-офицер</td>
+</tr>
+<tr>
+<td>der Feldwebel</td>
+<td>
+Фельдфебель</td>
+</tr>
+<tr>
+<td>der Oberfeldwebel</td>
+<td>
+Обер- фельдфебель</td>
+</tr>
+<tr>
+<td>der Hauptfeldwebel</td>
+<td>
+Гаупт- фельдфебель</td>
+</tr>
+<tr>
+<td>der Stabsfeldwebel</td>
+<td>
+Штабс- фельдфебель</td>
+</tr>
+<tr>
+<td>der Oberstabsfeldwebel</td>
+<td>
+Обер-штабс- фельдфебель</td>
+</tr>
+<tr>
+<td>der Leutnant</td>
+<td>
+Лейтенант</td>
+</tr>
+<tr>
+<td>der Oberleutnant</td>
+<td>
+Старший лейтенант</td>
+</tr>
+<tr>
+<td>der Hauptmann</td>
+<td>
+Капитан</td>
+</tr>
+<tr>
+<td>der Major</td>
+<td>
+Майор</td>
+</tr>
+<tr>
+<td>der Oberstleutnant</td>
+<td>
+Подполковник</td>
+</tr>
+<tr>
+<td>der Oberst</td>
+<td>
+Полковник</td>
+</tr>
+<tr>
+<td>der Brigadegeneral</td>
+<td>
+Бригадный генерал</td>
+</tr>
+<tr>
+<td>der Generalmajor</td>
+<td>
+Генерал-майор</td>
+</tr>
+<tr>
+<td>der Generalleutnant</td>
+<td>
+Генерал-лейтенант</td>
+</tr>
+<tr>
+<td>der Soldat</td>
+<td>
+Солдат</td>
+</tr>
+<tr>
+<td>der Offizier</td>
+<td>
+Офицер</td>
+</tr>
+</table>
+
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:font-family="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+    <style>
+
+    .body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+body {
+       background: url(../static/images/1000.jpg) no-repeat;
+  background-size: 100%;
+
+  margin: 0;
+  height: 3000px;
+}
+.custom-colored-h1
+{
+    color: white;
+<!--    background-color: rgba(255, 128, 0,.9);-->
+<!--    width:55%;-->
+<!--    font-size:98;-->
+}
+
+.table-h1
+{
+    color: white;
+    font-family: verdana;
+    font-size: 19px;
+    font-weight:100;
+}
+.button {
+    border: 1px ridge whitesmoke;
+    background-color: white;
+    padding: 28px 36px;
+    font-family: verdana;
+    font-size: 16px;
+    transition-duration: 0.8s;
+    color: black
+ }
+.button:hover {
+    background-color: whitesmoke;
+    border: 1px ridge #FFFFFF;
+    color: black;
+    padding: 10px 26px;
+    font-family: verdana;
+    font-size: 25px;
+    font-weight:100;
+}
+#header {
+  height: 50px;
+    font-family: verdana;
+    font-size: 20px;
+}
+#left {
+  float: left;
+    margin-left: 40px;
+    margin-top: 30px;
+  width: 180px;
+    font-family: verdana;
+    font-size: 17px;
+}
+
+    #right {
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    }
+
+    #content {
+    margin-top: 0px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 17px;
+    }
+    .col1 {
+    width:700px;
+    height:500px;
+    float:left;
+    box-shadow: inset -1px 0 0 black;
+    }
+    .col2 {
+    width:100%;
+    height:auto;
+    float:left;
+    }
+   body {
+    background: url(../static/images/1000.jpg)  repeat-y 100% 0;
+    background-size: 100%;
+    margin: 0;
+   }
+   h1 {
+    font-weight: bold;
+   }
+   h2 {
+    font-weight: normal;
+   }
+
+   .example-parent {
+  border: 2px solid #DFA612;
+  color: black;
+  display: flex;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight:100;
+}
+
+.example-origin {
+    cursor: pointer;
+
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+
+}
+
+.example-draggable {
+    cursor: pointer;
+
+  background-color: orange;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.example-draggable-wrong {
+  background-color: red;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+.example-draggable-right {
+  background-color: green;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone-beauty {
+  background-color: #ddd;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+.dropzone-right {
+  background-color: green;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+.example-dropzone {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+.button8 {
+  display: inline-block;
+  background-color:orange;
+  color: white;
+  font-weight: 700;
+  float: right;
+    font-family: verdana;
+    font-size: 21px;
+    font-weight:600;
+  text-decoration: none;
+  user-select: none;
+  width: 250px;
+  height: 70px;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+.button8:hover { background: rgba(255,255,255,.2); }
+.button8:active { background: white; }
+
+#dialogoverlay {
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  background: none;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+
+#dialogbox>div {
+  background: none;
+  margin: 8px;
+}
+
+#dialogbox>div>#dialogboxhead {
+  background: none;
+  font-size: 19px;
+  padding: 10px;
+  color: #CCC;
+}
+
+#dialogbox>div>#dialogboxbody {
+  background: orange;
+  padding: 20px;
+    font-size: 23px;
+
+  color: #FFF;
+}
+
+#dialogbox>div>#dialogboxfoot {
+  background: none;
+  padding: 10px;
+  text-align: right;
+}
+
+    </style>
+</head>
+<body class="body_hide" font-family:'verdana', sans-serif;/>
+<script>
+function CustomAlert() {
+  this.render = function(dialog) {
+    var winW = window.innerWidth;
+    var winH = window.innerHeight;
+    var dialogoverlay = document.getElementById('dialogoverlay');
+    var dialogbox = document.getElementById('dialogbox');
+    dialogoverlay.style.display = "block";
+    dialogoverlay.style.height = winH + "px";
+    dialogbox.style.left = (winW / 2) - (550 * .5) + "px";
+    dialogbox.style.top = "100px";
+    dialogbox.style.display = "block";
+    document.getElementById('dialogboxhead').innerHTML = "";
+    document.getElementById('dialogboxbody').innerHTML = dialog;
+    document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
+  }
+  this.ok = function() {
+    document.getElementById('dialogbox').style.display = "none";
+    document.getElementById('dialogoverlay').style.display = "none";
+  }
+}
+var Alert = new CustomAlert();
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+
+const list = ["die kopfbedeckung", "das barett","die feldmütze","der dienstanzug","die dienstjacke","die diensthose","die shorts","der gürtel","die schuhe","das abzeichen"]
+    function check() {
+        for (var i=0; i<10; i++) {
+            if (document.getElementById(i).value.toLowerCase() == list[i]) {
+                    document.getElementById(i).className = "example-draggable-right";
+            } else {
+                if (document.getElementById(i).value.length < 1) {
+                } else {
+                    document.getElementById(i).className = "example-draggable-wrong";
+                    Alert.render('Falsch! - ' + document.getElementById(i).value);
+                }
+            }
+        }
+    }
+
+</script>
+<div class="topnav">
+  <a class="active"  href="../../tour2/_1">Aktualisieren</a>
+  <a href="../../tour">Zurück</a>
+  <a href="../../tour2/_2">Weiter</a>
+
+</div>
+
+<div class="col2" id="content">
+    <h1 class="custom-colored-h1"><b> Runde 2. Aufgabe 1.</b> </h1>
+    <h1 class="custom-colored-h1"><b>Errate das richtige Wort und setze den richtigen Artikel ein.</b> </h1>
+    <p></p>
+
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+<div class="example-parent">
+  <div class="example-origin">
+    <div
+      id="die kopfbedeckung"
+      class="example-draggable"
+    > 1.
+        <input id = "0"  maxlength="45" size="40" value="">
+
+      EopfbundeKgck
+    </div>
+    <div
+      id="das barett"
+      class="example-draggable"
+    > 2.       <input id = "1"  maxlength="45" size="40" value="">
+
+       rettaB
+    </div>
+    <div
+      id="die feldmütze"
+      class="example-draggable"
+    > 3.       <input id = "2"  maxlength="45" size="40" value="">
+
+tzFmüelde  </div>
+
+    <div
+      id="der dienstanzug"
+      class="example-draggable"
+    > 4.       <input id = "3"  maxlength="45" size="40" value="">
+
+   nanDiezugst
+    </div>
+    <div
+      id="die dienstjacke"
+      class="example-draggable"
+    >  5.      <input id = "4"  maxlength="45" size="40" value="">
+
+ckeieDnstja
+    </div>
+    <div
+      id="die diensthose"
+      class="example-draggable"
+    >   6.     <input id = "5"  maxlength="45" size="40" value="">
+
+hosenstDie    </div>
+    <div
+      id="die shorts"
+      class="example-draggable"
+    >    7.    <input id = "6"  maxlength="45" size="40" value="">
+
+rtosSh
+    </div>
+    <div
+      id="der gürtel"
+      class="example-draggable"
+    > 8.       <input id = "7"  maxlength="45" size="40" value="">
+
+teGürl    </div>
+    <div
+      id="die schuhe"
+      class="example-draggable"
+    > 9.       <input id = "8"  maxlength="45" size="40" value="">
+
+hhueSc    </div>
+    <div
+      id="das abzeichen"
+      class="example-draggable"
+    >  10.      <input id = "9"  maxlength="45" size="38" value="">
+
+enAbchzei    </div>
+          <p> <button class="button8"  onclick="check()"> Überprüfen!</button></p>
+
+
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+</body>
+</html>

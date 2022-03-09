@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:font-family="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+    <style>
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+body {
+       background: url(../static/images/1000.jpg) no-repeat;
+  background-size: 100%;
+
+  margin: 0;
+  height: 3000px;
+}
+.custom-colored-h1
+{
+    color: white;
+}
+
+.table-h1
+{
+    color: white;
+    font-family: verdana;
+    font-size: 19px;
+    font-weight:100;
+}
+    #content {
+    margin-top: 0px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 17px;
+    }
+    .col1 {
+    width:700px;
+    height:500px;
+    box-shadow: inset -1px 0 0 black;
+    }
+    .col2 {
+    width:100%;
+    height:auto;
+    }
+   body {
+    background: url(../static/images/1000.jpg)  repeat-y 100% 0;
+    background-size: 100%;
+    margin: 0;
+   }
+   h1 {
+    font-weight: bold;
+   }
+   h2 {
+    font-weight: normal;
+   }
+
+   .example-parent {
+  border: 2px solid #DFA612;
+  color: white;
+  display: flex;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.example-origin {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+      cursor: pointer;
+
+
+}
+
+.example-draggable {
+    cursor: pointer;
+
+  background-color: #4AAE9B;
+  font-weight: normal;
+  margin-bottom: 60px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 60px;
+  padding: 10px;
+}
+
+.dropzone-beauty {
+  background-color: orange;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+
+.dropzone-right {
+  background-color: green;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+.example-dropzone {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+}
+.inputcl-red {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+    font-weight: normal;
+    background-color:red;
+}
+.inputcl-green {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+    font-weight: normal;
+    background-color:green;
+}
+.inputcl {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+    background-color:white;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+
+
+.droptarget {
+    width: 270px;
+    height: 35px;
+    border: 3px solid #fff;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: None; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+    color:white;
+    font-family: verdana;
+    font-size: 21px;
+    font-weight:600;
+   }
+.hidden{
+    display: none;
+}
+.showen{
+    display: yes;
+}
+
+.first_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+}
+.second_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+}
+.third_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+}
+.hr button{
+backgroung-color: None;
+padding: none;
+}
+
+   .wrapper {
+  display: grid;
+  grid-template-columns: 6fr 6fr 6fr 6fr;
+    margin-left: 60px;
+
+}
+
+.section a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.button {
+    display: inline-block;
+      background-color:orange;
+  color: white;
+    text-decoration: none;
+  user-select: none;
+    font-family: verdana;
+    font-size: 21px;
+    font-weight:600;
+	width: 250px;
+  height: 70px;
+    line-height: 50px;
+    position: relative;
+    padding: .5em 2em;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+.button:hover { background: rgba(255,255,255,.2); }
+.button:active { background: white; }
+
+
+.inputcl-red {
+    font-family: verdana;
+    font-size: 13px;
+    font-weight:100;
+    font-weight: normal;
+    background-color:red;
+    width:145px;
+}
+.inputcl {
+    font-family: verdana;
+    font-size: 13px;
+    font-weight:100;
+    font-weight:normal;
+    background-color:white;
+    width:145px;
+}
+
+
+#blink2 {
+  -webkit-animation: blink2 1s linear infinite;
+  animation: blink2 1s linear infinite;
+}
+@-webkit-keyframes blink2 {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+@keyframes blink2 {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+
+.hidden-p{
+    visibility: hidden;
+}
+
+
+.showen-p{
+    visibility: visible;
+}
+    </style>
+</head>
+<body class="body_hide" font-family:'verdana', sans-serif;/>
+
+<script>
+
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+
+const list = ['der leutnant', 'der oberst','der gefreiter', 'der generalmajor', 'der generalleutnant', 'der hauptmann', 'der oberstleutnant', 'der major']
+function check() {
+var sum=0;
+    for (var i=0; i<8; i++) {
+    console.log(document.getElementById(i).value.toLowerCase());
+        if (document.getElementById(i).value.toLowerCase() == list[i]) {
+            document.getElementById(i).remove();
+            document.getElementById(list[i]).remove();
+            sum+=1;
+        } else {
+            document.getElementById(i).className = "inputcl-red";
+        }
+    }
+    if (sum==8) {
+        document.getElementById("blink2").className = "showen-p";
+    }
+}
+</script>
+
+<div class="topnav">
+  <a class="active"  href="../../tour1/_2">Aktualisieren</a>
+  <a href="../../tour">Zurück</a>
+    <a href="../../win1">Weiter</a>
+
+</div>
+
+<div class="col2" id="content">
+    <h1 class="custom-colored-h1"><b> Runde 1. Aufgabe 2.</b> </h1>
+    <h1 class="custom-colored-h1"><b>Schreib die Dienstgradabzeichnung.</b> </h1>
+
+
+<div class="wrapper">
+    <div>
+    <img id = "der leutnant" src="../static/images/1-.png" width="150" height="330"/>
+    <p><input id = "0" class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+    <div>
+    <img id = "der oberst" src="../static/images/2-.png" width="150" height="330"/>
+    <p><input id = "1"  class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+    <div>
+    <img id = "der gefreiter" src="../static/images/3-.png" width="150" height="330"/>
+    <p><input id = "2"  class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+    <div>
+    <img id = "der generalmajor" src="../static/images/4-.png" width="150" height="330"/>
+    <p><input id = "3"  class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+</div>
+    <p></p>
+<div class="wrapper">
+    <div>
+    <img id = "der generalleutnant" src="../static/images/5-.png" width="150" height="330"/>
+    <p><input id = "4"  class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+    <div>
+    <img id = "der hauptmann" src="../static/images/6-.png" width="150" height="330"/>
+    <p><input id = "5"  class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+    <div>
+    <img id = "der oberstleutnant" src="../static/images/7-.png" width="150" height="330"/>
+    <p><input id = "6"  class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+    <div>
+    <img id = "der major" src="../static/images/8-.png" width="150" height="330"/>
+    <p><input id = "7"  class="inputcl"  maxlength="45" size="20" value=""></p>
+    </div>
+</div>
+
+
+    <div id="blink2" class="hidden-p" style="margin-left:450px; font-size:56px; color: #333;    font-family: verdana; width:550px;background:orange; border: 1px;">
+        "Je anstrengender die Ausbildung,...
+    </div>
+
+
+    <div class="section clearfix">
+  <div class="title-text">
+    <button class="button" onclick="check()">Überprüfen!</button>
+  </div>
+</div>
+
+</div>
+
+
+</body>
+</html>

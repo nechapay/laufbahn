@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:font-family="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+    <style>
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+body {
+       background: url(../static/images/1000.jpg) no-repeat;
+  background-size: 100%;
+
+  margin: 0;
+  height: 3000px;
+}
+.custom-colored-h1
+{
+    color: white;
+}
+
+.table-h1
+{
+    color: white;
+    font-family: verdana;
+    font-size: 19px;
+    font-weight:100;
+}
+    #content {
+    margin-top: 0px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 17px;
+    }
+    .col1 {
+    width:700px;
+    height:500px;
+    box-shadow: inset -1px 0 0 black;
+    }
+    .col2 {
+    width:100%;
+    height:auto;
+    float:left;
+    }
+   body {
+    background: url(../static/images/1000.jpg)  repeat-y 100% 0;
+    background-size: 100%;
+    margin: 0;
+   }
+   h1 {
+    font-weight: bold;
+   }
+   h2 {
+    font-weight: normal;
+   }
+
+   .example-parent {
+  border: 2px solid #DFA612;
+  color: white;
+  display: flex;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.example-origin {
+    cursor: pointer;
+
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+
+}
+
+.example-draggable {
+    cursor: pointer;
+
+  background-color: #4AAE9B;
+  font-weight: normal;
+  margin-bottom: 60px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 60px;
+  padding: 10px;
+}
+
+.dropzone-beauty {
+  background-color: orange;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+
+.dropzone-right {
+  background-color: green;
+  font-weight: normal;
+  margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+  margin-top: 10px;
+  padding: 10px;
+}
+.example-dropzone {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+}
+.inputcl-red {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+    font-weight: normal;
+    background-color:red;
+}
+.inputcl-green {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+    font-weight: normal;
+    background-color:green;
+}
+.inputcl {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight:100;
+    background-color:white;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+
+.button8 {
+    margin-bottom: 100px; /* Отступ слева */
+
+  display: inline-block;
+  margin-left:35%;
+  background-color:orange;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 1px;
+  width: 300px;
+  height: 70px;
+  transition: 0.3s;
+  font-size:30px;
+}
+.button8:hover { background: rgba(255,255,255,.2); }
+.button8:active { background: white; }
+
+.droptarget {
+    width: 270px;
+    height: 35px;
+    border: 3px solid #fff;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+ul.hr li {
+    margin-top: 100px; /* Отступ слева */
+
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: None; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+    color:white;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight:700;
+    background-color: orange;
+   }
+ul.hr button {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: None; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+    color:white;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight:700;
+   }
+.hidden{
+    display: none;
+}
+.showen{
+    display: yes;
+}
+
+.first_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    margin-top: 100px; /* Отступ слева */
+}
+.second_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+}
+.third_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+}
+.hr button{
+backgroung-color: None;
+padding: none;
+}
+
+
+#dialogoverlay {
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  background: none;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+
+#dialogbox>div {
+  background: none;
+  margin: 8px;
+}
+
+#dialogbox>div>#dialogboxhead {
+  background: none;
+  font-size: 19px;
+  padding: 10px;
+  color: #CCC;
+}
+
+#dialogbox>div>#dialogboxbody {
+  background: orange;
+  padding: 20px;
+    font-size: 23px;
+
+  color: #FFF;
+}
+
+#dialogbox>div>#dialogboxfoot {
+  background: none;
+  padding: 10px;
+  text-align: right;
+}
+
+#blink2 {
+  -webkit-animation: blink2 1s linear infinite;
+  animation: blink2 1s linear infinite;
+}
+@-webkit-keyframes blink2 {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+@keyframes blink2 {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+.hidden-p{
+    visibility: hidden;
+}
+
+
+.showen-p{
+    visibility: visible;
+}
+
+</style>
+</head>
+<body class="body_hide"  font-family:verdana, sans-serif;/>
+<script>
+function CustomAlert() {
+  this.render = function(dialog) {
+    var winW = window.innerWidth;
+    var winH = window.innerHeight;
+    var dialogoverlay = document.getElementById('dialogoverlay');
+    var dialogbox = document.getElementById('dialogbox');
+    dialogoverlay.style.display = "block";
+    dialogoverlay.style.height = winH + "px";
+    dialogbox.style.left = (winW / 2) - (550 * .5) + "px";
+    dialogbox.style.top = "100px";
+    dialogbox.style.display = "block";
+    document.getElementById('dialogboxhead').innerHTML = "";
+    document.getElementById('dialogboxbody').innerHTML = dialog;
+    document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
+  }
+  this.ok = function() {
+    document.getElementById('dialogbox').style.display = "none";
+    document.getElementById('dialogoverlay').style.display = "none";
+  }
+}
+    var sum=0;
+
+var Alert = new CustomAlert();
+function check1(id) {
+    var text = id.textContent;
+    if (id.textContent.includes("das Herr") && id.textContent.includes("die Infantrie") && id.textContent.includes("die Infantrie") && !id.textContent.includes("das Battailon"))
+    {
+    sum+=1;
+    Alert.render("Richtig");
+            document.getElementById('first').remove();
+}
+    else if (id.textContent.includes("die Marine") && id.textContent.includes("die Fernmeldetruppe") && id.textContent.includes("die Panzertruppe") && !id.textContent.includes("der Oberstabsfeldwebel"))
+    {    sum+=1;
+    Alert.render("Richtig");
+            document.getElementById('second').remove();}
+    else if (id.textContent.includes("das Herr") && id.textContent.includes("die Luftwaffe") && id.textContent.includes("die Heeresflugabwehrtruppe") && !id.textContent.includes("der Kampfanzug"))
+    {    sum+=3;
+    Alert.render("Richtig");
+            document.getElementById('third').remove();}
+    else if (id.textContent.includes("die Pioniertruppe") && id.textContent.includes("die Artillerie") && id.textContent.includes("die Fallschirmjägertruppe") && !id.textContent.includes("In Doppelreihe, angetreten"))
+    {    sum+=10;
+    Alert.render("Richtig");
+            document.getElementById('fourth').remove();}
+    else if (id.textContent.includes("die Aufklärungstruppe") && id.textContent.includes("der Zentrale Sanitätsdienst") && id.textContent.includes("die ABC-Abwehrtruppe") && !id.textContent.includes("das Regiment"))
+    {    sum+=15;
+    Alert.render("Richtig");
+            document.getElementById('fifth').remove();}
+    else
+    {Alert.render("Falsch!")}
+
+    if (sum==30) {
+            document.getElementById("blink2").className = "showen-p";
+    }
+    console.log(sum);
+}
+
+function hide(id) {
+    document.getElementById(id).remove();
+}
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+</script>
+
+<div class="topnav">
+  <a class="active"  href="../../tour2/_4">Aktualisieren</a>
+  <a href="../../tour">Zurück</a>
+  <a href="../../win2">Weiter</a>
+</div>
+
+
+
+<div class="col2" id="content">
+    <h1 class="custom-colored-h1"><b> Runde 2. Aufgabe 4.</b> </h1>
+    <h1 class="custom-colored-h1"><b>Finde das Wort, welches nicht zu den übrigen passt.</b> </h1>
+
+
+        <div id="blink2" class="hidden-p" style="margin-left:400px; font-size:56px; color: #333;    font-family: verdana; width:650px;background:orange; border: 1px;">
+        "...desto leichter der Heerzug, je leichter die Ausbildung,...
+    </div>
+
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+    <div id="first" class="first_test">
+        <ul class="hr">
+            <li id="0" class="deutche" >1.</li>
+            <li id="1" class="deutche" onclick="hide(id)">- das Herr</li>
+            <li id="2" class="deutche"onclick="hide(id)">- die Infantrie</li>
+            <li id="3" class="deutche"onclick="hide(id)">- das Battailon</li>
+            <li id="4" class="deutche"onclick="hide(id)">- die Streitkräftebasis</li>
+        </ul>
+                     <button class="button8"  onclick="check1(id=first)"> Überprüfen!</button>
+
+    </div>
+
+    <div id="second" class="first_test">
+        <ul class="hr">
+            <li id="10" class="deutche" >2.</li>
+            <li id="11" class="deutche" onclick="hide(id)">- der Oberstabsfeldwebel</li>
+            <li id="12" class="deutche"onclick="hide(id)">- die Panzertruppe</li>
+            <li id="13" class="deutche"onclick="hide(id)">- die Fernmeldetruppe</li>
+            <li id="14" class="deutche"onclick="hide(id)">- die Marine</li>
+        </ul>
+                    <button class="button8"  onclick="check1(id=second)"> Überprüfen!</button>
+
+    </div>
+
+    <div id="third" class="first_test">
+        <ul class="hr">
+            <li id="20" class="deutche" >3.</li>
+            <li id="21" class="deutche" onclick="hide(id)">- die Heeresflugabwehrtruppe</li>
+            <li id="22" class="deutche"onclick="hide(id)">- die Luftwaffe</li>
+            <li id="23" class="deutche"onclick="hide(id)">- der Kampfanzug</li>
+            <li id="24" class="deutche"onclick="hide(id)">- das Herr</li>
+        </ul>
+            <button class="button8"  onclick="check1(id=third)"> Überprüfen!</button>
+    </div>
+
+    <div id="fourth" class="first_test">
+        <ul class="hr">
+            <li id="30" class="deutche">4.</li>
+            <li id="31" class="deutche" onclick="hide(id)">- die Fallschirmjägertruppe</li>
+            <li id="32" class="deutche"onclick="hide(id)">- die Artillerie</li>
+            <li id="33" class="deutche"onclick="hide(id)">- In Doppelreihe, angetreten!</li>
+            <li id="34" class="deutche"onclick="hide(id)">- die Pioniertruppe</li>
+        </ul>
+            <button class="button8"  onclick="check1(id=fourth)"> Überprüfen!</button>
+    </div>
+
+    <div id="fifth" class="first_test">
+        <ul class="hr">
+            <li id="40" class="deutche" >5.</li>
+            <li id="41" class="deutche" onclick="hide(id)">- die Aufklärungstruppe</li>
+            <li id="42" class="deutche"onclick="hide(id)">- der Zentrale Sanitätsdienst</li>
+            <li id="43" class="deutche"onclick="hide(id)">- die ABC-Abwehrtruppe</li>
+            <li id="44" class="deutche"onclick="hide(id)">- das Regiment</li>
+        </ul>
+                     <button class="button8"  onclick="check1(id=fifth)"> Überprüfen!</button>
+    </div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>

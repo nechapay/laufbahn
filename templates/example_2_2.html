@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:font-family="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+    <style>
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+body {
+       background: url(../static/images/1000.jpg) no-repeat;
+  background-size: 100%;
+
+  margin: 0;
+  height: 3000px;
+}
+.custom-colored-h1
+{
+    color: white;
+}
+
+.button {
+    border: 1px ridge whitesmoke;
+    background-color: white;
+    padding: 28px 36px;
+    font-family: verdana;
+    font-size: 16px;
+    transition-duration: 0.8s;
+    color: black
+ }
+.button:hover {
+    background-color: whitesmoke;
+    border: 1px ridge #FFFFFF;
+    color: black;
+    padding: 10px 26px;
+    font-family: verdana;
+    font-size: 25px;
+    font-weight:100;
+}
+#header {
+  height: 50px;
+    font-family: verdana;
+    font-size: 20px;
+}
+#left {
+  float: left;
+    margin-left: 2px;
+    margin-top: 30px;
+  width: 180px;
+    font-family: verdana;
+    font-size: 17px;
+}
+
+    #right {
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    }
+
+    #content {
+    margin-left: 2px;
+    margin-top: 0px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 17px;
+    }
+    .col1 {
+    width:700px;
+    height:500px;
+    float:left;
+    box-shadow: inset -1px 0 0 black;
+    }
+    .col2 {
+    width:1200px;
+    height:1600px;
+    float:left;
+    }
+   body {
+    background: url(../static/images/1000.jpg)  repeat-y 100% 0;
+    background-size: 100%;
+    margin: 0;
+   }
+   h1 {
+    font-weight: bold;
+   }
+   h2 {
+    font-weight: normal;
+   }
+
+
+.deutche {
+    color: white;
+    background-color: orange;
+  width: auto;
+    border: 2px solid #333;
+
+}
+
+
+
+.droptarget {
+    width: 270px;
+    height: 35px;
+    border: 3px solid #fff;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255,.7);
+
+}
+ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #fff; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+
+   }
+ul.hr div {
+margin-top: 100px;
+margin-bottom: 10px;
+
+   }
+.hidden{
+    display: none;
+}
+.showen{
+    display: yes;
+}
+
+.first_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+        margin-top: 100px; /* Отступ слева */
+        margin-bottom: 100px; /* Отступ слева */
+
+}
+.second_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+        margin-top: 100px; /* Отступ слева */
+                margin-bottom: 100px; /* Отступ слева */
+
+
+}
+.third_test{
+display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    margin-top: 100px; /* Отступ слева */
+            margin-bottom: 100px; /* Отступ слева */
+
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+.button8 {
+  display: inline-block;
+  background-color:orange;
+  color: white;
+  font-weight: 700;
+  float: right;
+    font-family: verdana;
+    font-size: 21px;
+    font-weight:600;
+  text-decoration: none;
+  user-select: none;
+  width: 250px;
+  height: 70px;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+.button8:hover { background: rgba(255,255,255,.2); }
+.button8:active { background: white; }
+
+#dialogoverlay {
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  background: none;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+
+#dialogbox>div {
+  background: none;
+  margin: 8px;
+}
+
+#dialogbox>div>#dialogboxhead {
+  background: none;
+  font-size: 19px;
+  padding: 10px;
+  color: #CCC;
+}
+
+#dialogbox>div>#dialogboxbody {
+  background: orange;
+  padding: 20px;
+    font-size: 23px;
+
+  color: #FFF;
+}
+
+#dialogbox>div>#dialogboxfoot {
+  background: none;
+  padding: 10px;
+  text-align: right;
+}
+
+    </style>
+</head>
+<body class="body_hide"  font-family:verdana, sans-serif;/>
+<script>
+function CustomAlert() {
+  this.render = function(dialog) {
+    var winW = window.innerWidth;
+    var winH = window.innerHeight;
+    var dialogoverlay = document.getElementById('dialogoverlay');
+    var dialogbox = document.getElementById('dialogbox');
+    dialogoverlay.style.display = "block";
+    dialogoverlay.style.height = winH + "px";
+    dialogbox.style.left = (winW / 2) - (550 * .5) + "px";
+    dialogbox.style.top = "100px";
+    dialogbox.style.display = "block";
+    document.getElementById('dialogboxhead').innerHTML = "";
+    document.getElementById('dialogboxbody').innerHTML = dialog;
+    document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
+  }
+  this.ok = function() {
+    document.getElementById('dialogbox').style.display = "none";
+    document.getElementById('dialogoverlay').style.display = "none";
+  }
+}
+var Alert = new CustomAlert();
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+}
+function check1() {
+const list = ['a','b','c','d'];
+var sum = '';
+    for (var item of list) {
+        sum += document.getElementById(item).textContent;
+    }
+    if (sum == 'Auf dem Fotosieht maneinenJungen') {
+        document.getElementById('first').remove();
+    } else {
+        Alert.render('Falsch!');
+    }
+}
+function check2(){
+const list = ['100','101','102','103','104','105','106','107','108','109','110','111','112','113','114','115','116','117','118','119','120','121','122','123','124','125','126','127','128','129'];
+var sum = '';
+    for (var i=0; i<30; i++) {
+        try {
+        sum += document.getElementById(list[i]).textContent;
+        } catch (err) {
+        };
+    }
+    if (sum == 'Das Bild zeigteinen Kadetten, der zurKadettenschulegeht.Er hatpräsentablesAussehen.Der Junge siehternst und ordentlichaus.Der KadettträgtGroßen dunkelblauen Dienstanzug,die schwarzenHalbschuhe undauf dem Kopfist die Kopfbedeckung. Auf dem Dienstanzugdes Kadettensehe ichauchacht goldenen Knöpfeund den goldenen Gürtel.Auf den Ärmelnsind zweiKadettenschuleabzeichen zu sehen.') {
+        document.getElementById('second').remove();
+    } else {
+        Alert.render('Falsch!');
+    }
+}
+
+function check3(){
+const list = ['10','11','12','13','14','15','16','17','18','19'];
+var sum = '';
+    for (var i=0; i<10; i++) {
+        try {
+        sum += document.getElementById(list[i]).textContent;
+        } catch (err) {
+        };
+    }
+    console.log(sum);
+    if (sum == 'Ich denke,dass er vielleicht  14 Jahre altist und in der 8.Klasse  lernt. Ich meine,dass  dieser Kadettnach dem Charaktertapfer und männlich ist.') {
+        document.getElementById('third').remove();
+    } else {
+        Alert.render('Falsch!');
+    }
+}
+function allowDrop(event) {
+    event.preventDefault();
+}
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<div class="topnav">
+  <a class="active"  href="../../tour2/_2">Aktualisieren</a>
+  <a href="../../tour">Zurück</a>
+  <a href="../../tour2/_3">Weiter</a>
+
+</div>
+
+<div class="col2" id="content">
+    <h1 class="custom-colored-h1"><b> Runde 2. Aufgabe 2.</b> </h1>
+    <h1 class="custom-colored-h1"><b>Verbinde die Sätze und mache den Text.</b> </h1>
+    <p></p>
+
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+    <div id="first" class="first_test">
+        <ul class="hr">
+            <div>
+            <li ondragstart="dragStart(event)" draggable="true" id="2" class="deutche">sieht man</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="1" class="deutche">Auf dem Foto</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="4" class="deutche">Jungen</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3" class="deutche">einen</li>
+            </div>
+        </ul>
+        <ul class="hr">
+            <li id="a" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="b" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="c" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="d" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+        </ul>
+                                    <p> <button class="button8"  onclick="check1()"> Überprüfen!</button></p>
+
+    </div>
+
+    <div id="second" class="second_test">
+        <ul class="hr">
+            <div>
+            <li ondragstart="dragStart(event)" draggable="true" id="2222222223" class="deutche">Das Bild zeigt</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="4asdasdasd" class="deutche">einen Kadetten, </li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3dsadsadsa" class="deutche">der zur</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3frfrfr" class="deutche">geht.</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="g3gbg" class="deutche">Kadettenschule</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="bfb" class="deutche"> hat</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="rg3rrg" class="deutche">Aussehen.</li>
+            <p></p>
+            <li ondragstart="dragStart(event)" draggable="true" id="3efe" class="deutche">Er</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3vfvfvf" class="deutche">präsentables</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3345345345" class="deutche"> sieht</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="34444" class="deutche">Der Junge</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3fgfgf" class="deutche">ernst und ordentlich</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="bfbfb" class="deutche">trägt</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3bgbgbg" class="deutche">aus.Der Kadett</li>
+            <p></p>
+            <li ondragstart="dragStart(event)" draggable="true" id="3456" class="deutche">Großen dunkelblauen Dienstanzug,</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3fgr" class="deutche">die schwarzen</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3yyy" class="deutche">Halbschuhe und</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3ggg" class="deutche">auf dem Kopf</li>
+            <p></p>
+
+            <li ondragstart="dragStart(event)" draggable="true" id="3gbgb" class="deutche">ist die Kopfbedeckung</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3wefwr" class="deutche">. Auf dem Dienstanzug</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3drhrhrfb" class="deutche">und den goldenen Gürtel.</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="3dfb" class="deutche"> zwei</li>
+            <p></p>
+            <li ondragstart="dragStart(event)" draggable="true" id="3vdfbd" class="deutche">acht goldenen Knöpfe</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="dfb" class="deutche">auch</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="dfbdf" class="deutche">sehe ich</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="tgt" class="deutche">Auf den Ärmeln</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="dfgb" class="deutche">sind</li>
+            <p></p>
+            <li ondragstart="dragStart(event)" draggable="true" id="98" class="deutche">Kadettenschuleabzeichen zu sehen.</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="99" class="deutche">des Kadetten</li>
+                </div>
+        </ul>
+        <ul class="hr">
+            <li id="100" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="101" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="102" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="103" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="104" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+
+            <li id="105" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="106" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="107" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="108" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="109" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+
+            <li id="110" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="111" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="112" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="113" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+
+            <li id="114" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="115" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="116" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="117" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+
+
+            <li id="118" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="119" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="121" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="122" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+
+            <li id="123" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="124" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="125" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="126" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+
+            <li id="127" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="128" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="129" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+</ul>
+                            <p> <button class="button8"  onclick="check2()"> Überprüfen!</button></p>
+    </div>
+
+    <div id="third"  class="third_test">
+        <ul class="hr">
+            <div>_</div>
+            <div>
+            <li ondragstart="dragStart(event)" draggable="true" id="asdasd" class="deutche">Ich denke,</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="sdsdfsdf" class="deutche">dass er vielleicht </li>
+            <li ondragstart="dragStart(event)" draggable="true" id="dfgdfgdfg" class="deutche">ist und</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="fghfghfgh" class="deutche"> 14 Jahre alt</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="ghjgjhghj" class="deutche"> in der 8.Klasse </li>
+            <p></p>
+            <li ondragstart="dragStart(event)" draggable="true" id="xcvxcvxvc" class="deutche"> lernt. Ich meine,</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="vcxvcxvxc" class="deutche">dass </li>
+            <li ondragstart="dragStart(event)" draggable="true" id="cvbcvbcvb" class="deutche">nach dem Charakter</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="svssvsvs" class="deutche">tapfer und männlich ist.</li>
+            <li ondragstart="dragStart(event)" draggable="true" id="cdcd" class="deutche"> dieser Kadett</li>
+            <p></p>
+                </div>
+        </ul>
+        <ul class="hr">
+            <li id="10" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="11" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="12" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="13" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+
+            <li id="14" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="15" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="16" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="17" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="18" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+            <li id="19" ondrop="drop(event)" ondragover="allowDrop(event)"class="droptarget"></li>
+        </ul>
+                    <p> <button class="button8"  onclick="check3()"> Überprüfen!</button></p>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>

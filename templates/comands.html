@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+       <style>
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+       h1 {
+    font-weight: bold;
+   }
+   h2 {
+    font-weight: normal;
+   }
+   h3 {
+    font-weight: lighter;
+   }
+   h4 {
+    font-weight: 100;
+
+   }
+.vyrovnyat {
+    background: #ffffff;
+    padding: 3em 0;
+    text-align: left;
+    font-size: 18px;
+    font-family: verdana;
+    }
+.centre {
+    background: #ffffff;
+    text-align: center; /* выровнять текст и картинки по горизонтали */
+    font-size: 24px
+    font-family: verdana;
+    }
+.button {
+    background-color: #ffffff;
+    padding: 8px 16px;
+    font-family: verdana;
+    font-size: 16px;
+    transition-duration: 0.8s;
+    color: black
+ }
+.button:hover {
+    background-color: #FFCC00;
+    color: black;
+    padding: 10px 18px;
+    font-family: verdana;
+    font-size: 20px;
+}
+#header {
+    background-color: #FFCC00;
+  height: 50px;
+    font-family: verdana;
+    font-size: 20px;
+}
+#left {
+  float: left;
+    margin-left: 40px;
+    margin-top: 30px;
+  width: 250px;
+    font-family: verdana;
+    font-size: 17px;
+}
+
+#right {
+  float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+#content {
+  margin-left: 120px;
+  margin-top: 0px;
+  overflow: hidden;
+    font-family: verdana;
+    font-size: 17px;
+}
+   .col1 {
+  width:700px;
+  height:500px;
+  float:left;
+  box-shadow: inset -1px 0 0 black;
+}
+.col2 {
+  width:900px;
+  height:520px;
+  float:left;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: auto;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+    </style>
+
+</head>
+<body  class="body_hide"  font-family:"verdana", sans-serif;/>
+<script>
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+</script>
+<div id="header"></div>
+
+<div class="col1" id="left">
+    <h2><i>-немецкий</i></h2>
+</br>
+<form action="/tour" href="tour.html" method="POST">
+    <button class="button" type="submit"> &#128377;  Тур </button>
+    <p></p>
+</form>
+<form action="/cards" href="cards.html" method="POST">
+    <button class="button" type="submit"> &#128194; Карточки </button>
+    <p></p>
+</form>
+
+<form action="/book" href="book.html" method="POST">
+    <button class="button" type="submit"> &#128212; Словарь </button>
+    <p></p>
+</form>
+
+
+<form action="/" href="index.html" method="POST">
+<button class="button" type="submit"> &#127968; Домой </button>
+<p></p>
+</form>
+
+</div>
+
+<div class="col2" id="content">
+    <h1><b> Карточки со словами</b> </h1>
+
+    <h2> Выберите категорию  </h2>
+
+<form action="/" href="index.html" method="POST">
+<button class="button" type="submit">  MILITÄRBEFEHLE (СТРОЕВЫЕ КОМАНДЫ) </button>
+<br>
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8090cef876.js"></script>
+    <title>Main page</title>
+    <style>
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+#content {
+  margin-top: 0px;
+  overflow: hidden;
+    font-family: verdana;
+    font-size: 30px;
+}
+.col2 {
+  width:auto;
+  height:auto;
+  float:left;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: auto;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: white;
+}
+
+.custom-colored-h1
+{
+    color: white;
+}
+.my-table
+{
+    color: white;
+    background-color:orange;
+}
+
+
+body {
+       background: url(../static/images/1000.jpg) repeat;
+  background-size: 100%;
+
+  margin: 0;
+  height: auto;
+}
+    </style>
+</head>
+<body  class="body_hide"  font-family:'verdana', sans-serif;  scroll="yes"/>
+<script>
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+</script>
+
+
+<div class="topnav">
+  <a class="active" href="../../book">Wörterbuch</a>
+  <a href="../../cards">Karten</a>
+  <a href="../../tour">Runden</a>
+</div>
+
+
+
+<div class="col2" id="content">
+    <h1 class="custom-colored-h1"><b> TEILSTREITKRÄFTE UND TRUPPENGATTUNGEN</b> </h1>
+
+    <table class="my-table" border="1" width="100%" cellpadding="3" bordercolor='#333'>
+   <tr>
+    <th>Слово</th>
+    <th>Перевод</th>
+   </tr>
+<tr>
+<td>das Herr
+</td>
+<td>
+Сухопутные войска
+ </td>
+</tr>
+<tr>
+<td>die Luftwaffe
+</td>
+<td>Военно-воздушные силы
+  </td>
+</tr>
+<tr>
+<td>die Marine
+</td>
+<td>
+Военно-морские силы
+ </td>
+</tr>
+<tr>
+<td>die Streitkräftebasis
+</td>
+<td>
+Объединенные силы обеспечения
+ </td>
+</tr>
+<tr>
+<td>der Zentrale Sanitätsdienst
+</td>
+<td>
+Медико-санитарная служба
+ </td>
+</tr>
+<tr>
+<td>die Infantrie
+</td>
+<td>
+Пехота
+ </td>
+</tr>
+<tr>
+<td>die Panzergrenadiertruppe
+</td>
+<td>
+Мотопехота
+ </td>
+</tr>
+<tr>
+<td>die Panzertruppe
+</td>
+<td>
+Бронетанковые войска
+ </td>
+</tr>
+<tr>
+<td>die Artillerie
+</td>
+<td>
+Артиллерия
+</td>
+</tr>
+<tr>
+<td>die ABC-Abwehrtruppe
+</td>
+<td>
+Войска РХБЗ
+ </td>
+</tr>
+<tr>
+<td>die Aufklärungstruppe
+</td>
+<td>Разведывательные войска
+</td>
+</tr>
+<tr>
+<td>die Heeresflugabwehrtruppe
+</td>
+<td>
+Войска ПВО
+</td>
+</tr>
+<tr>
+<td>die Fernmeldetruppe
+</td>
+<td>
+Войска связи
+ </td>
+</tr>
+<tr>
+<td>die Pioniertruppe
+</td>
+<td>
+Инженерные войска
+ </td>
+</tr>
+<tr>
+<td>die Fallschirmjägertruppe
+</td>
+<td>
+Воздушно-десантные войска
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
